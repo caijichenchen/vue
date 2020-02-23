@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // const obj = {
+    //     add: function() {
+    //         console.log(this)
+    //     },
+    //     sum: () => {
+    //         console.log(this);
+
+    //     }
+    // }
+    // obj.add()
+    // obj.sum()
+    const arr = [{
+        name: 'jack',
+        age: 18
+    }, {
+        name: 'tom',
+        age: 20
+    }]
+    let arr1 = arr.filter(val => val.age == 18)
+    arr1[0].age++
+        console.log(arr);
+    console.log(arr1)
+        // const arr1 = arr.forEach(item => {
+        //     console.log(item)
+        //     item.city = 'xy'
+        //     return item
+        // })
+        // console.log(arr);
+
+    // console.log(arr1)
+    // const obj = {
+    //         name: 'tom',
+    //         age: 18
+    //     }
+    // const obj = [2, 3]
+    // console.log(Object.keys(obj).filter(val => val != 'age'));
+
+    // console.log(Object.entries(obj));
+    // for (let [index, val] of Object.entries(obj)) {
+    //     console.log(index)
+    //     console.log(val)
+    //     index == 'age' ? console.log('11') : console.log('22')
+    // }
+</script>
+
+</html>
