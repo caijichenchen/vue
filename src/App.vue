@@ -1,14 +1,20 @@
 <template>
   <div id="app">
     <router-view/>
-    <footerTabBar />
+    <footerTabBar v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
 <script>
 import footerTabBar from './components/footerTabBar/footerTabBar.vue'
+import {reqFoodCategorys} from './api/index.js'
 export default {
   name: 'App',
+  mounted(){
+    reqFoodCategorys().then(res=>{
+      // console.log(res)
+    })
+  },
   components:{
     footerTabBar
   }
