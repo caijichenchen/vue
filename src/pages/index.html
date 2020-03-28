@@ -22,23 +22,23 @@
     // }
     // obj.add()
     // obj.sum()
-    const arr = [{
-        name: 'jack',
-        age: 18
-    }, {
-        name: 'tom',
-        age: 20
-    }]
-    let arr1 = arr.filter(val => val.age == 18)
-    arr1[0].age++
-        console.log(arr);
-    console.log(arr1)
-        // const arr1 = arr.forEach(item => {
-        //     console.log(item)
-        //     item.city = 'xy'
-        //     return item
-        // })
-        // console.log(arr);
+    // const arr = [{
+    //     name: 'jack',
+    //     age: 18
+    // }, {
+    //     name: 'tom',
+    //     age: 20
+    // }]
+    // let arr1 = arr.filter(val => val.age == 18)
+    // arr1[0].age++
+    //     console.log(arr);
+    // console.log(arr1)
+    // const arr1 = arr.forEach(item => {
+    //     console.log(item)
+    //     item.city = 'xy'
+    //     return item
+    // })
+    // console.log(arr);
 
     // console.log(arr1)
     // const obj = {
@@ -54,6 +54,44 @@
     //     console.log(val)
     //     index == 'age' ? console.log('11') : console.log('22')
     // }
+
+
+    // const arr = [{
+    //     name: 'leo',
+    //     sex: '男'
+    // }, {
+    //     name: 'tom',
+    //     sex: '女'
+    // }]
+    // const arr2 = [{
+    //     age: 15
+    // }, {
+    //     age: 18
+    // }]
+    // arr.forEach((item, index) => {
+    //     for (let [name, val] of Object.entries(item)) {
+    //         arr2[index][name] = val
+    //     }
+    // })
+    // console.log(arr2)
+
+
+    // const a = {
+    //     name: 'leo',
+    //     sex: '男'
+    // }
+    // for (let [name, val] of Object.entries(a)) {
+    //     console.log(name, val)
+    // }
+    let a = {
+        age: 14
+    }
+
+    function fun(obj) {
+        obj.age = 15
+    }
+    fun(a)
+    console.log(a)
 </script>
 
 </html>

@@ -6,17 +6,18 @@
 </template>
 
 <script>
+import {mapActions} from 'vuex'
 import footerTabBar from './components/footerTabBar/footerTabBar.vue'
-import {reqFoodCategorys} from './api/index.js'
 export default {
   name: 'App',
-  mounted(){
-    reqFoodCategorys().then(res=>{
-      // console.log(res)
-    })
-  },
   components:{
     footerTabBar
+  },
+  mounted(){
+    this.getAddress()
+  },
+  methods:{
+    ...mapActions(['getAddress'])
   }
 }
 </script>
